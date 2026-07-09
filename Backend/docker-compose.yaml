@@ -1,0 +1,9 @@
+services:
+    backend:
+       build: .
+       # means build using the docker file in that directory
+       container_name: library-backend-container
+       ports:
+       - "3000:3000"
+       env_file:
+       - .env
